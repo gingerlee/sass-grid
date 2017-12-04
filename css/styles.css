@@ -1,0 +1,29 @@
+.mint {
+  height: 50px;
+  width: 22.5%;
+  float: left;
+  margin: .5%;
+  background: #d9f5e8; }
+
+.teal {
+  height: 50px;
+  width: 22.5%;
+  float: left;
+  margin: .5%;
+  background: #37cbc2; }
+
+.gold {
+  height: 50px;
+  width: 22.5%;
+  float: left;
+  margin: .5%;
+  background: #ffbb33; }
+
+.tomato {
+  height: 50px;
+  width: 22.5%;
+  float: left;
+  margin: .5%;
+  background: tomato; }
+
+/*# sourceMappingURL=styles.css.map */
