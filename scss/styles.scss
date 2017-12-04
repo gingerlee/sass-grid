@@ -1,10 +1,12 @@
-$column-height: 50px;
+$column-height: 80px;
 $column-width: 22.5%;
+$column-padding: 10px;
 
-$mint: rgba(217,245,232,1);
-$teal: rgba(55,203,194,1);
-$gold: rgba(255,187,51,1);
-$tomato: rgba(255,99,71,1);
+$color1: rgba(217,245,232,1);
+$color2: rgba(55,203,194,1);
+$color3: rgba(255,187,51,1);
+$color4: rgba(255,99,71,1);
+
 
 @mixin column-setup() {
   height: $column-height;
@@ -13,23 +15,47 @@ $tomato: rgba(255,99,71,1);
   margin: .5%;
 }
 
-.mint {
+body {
+  font-family: sans-serif;
+}
+
+table {
+  font-size: .7em;
+  width: 100%;
+}
+
+.left {
+  float: left;
+  font-weight: bold;
+}
+
+.right {
+  text-align: right;
+}
+
+.color-column {
   @include column-setup();
-  background: $mint;
+}
+
+.color {
+  @extend .color-column;
+  float: none;
+  width: 100%;
+}
+
+.mint {
+  background: $color1;
 
 }
 .teal {
-  @include column-setup();
-  background: $teal;
+  background: $color2;
 
 }
 .gold {
-  @include column-setup();
-  background: $gold;
+  background: $color3;
 
 }
 .tomato {
-  @include column-setup();
-  background: $tomato;
+  background: $color4;
 
 }
