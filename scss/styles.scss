@@ -19,6 +19,19 @@ body {
   font-family: sans-serif;
 }
 
+.clear-fix:after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.row:after {
+  clear: both;
+  display: block;
+  content: "";
+  margin-bottom: 60px;
+}
+
 table {
   font-size: .7em;
   width: 100%;
@@ -39,23 +52,30 @@ table {
 
 .color {
   @extend .color-column;
-  float: none;
+  clear: both;
   width: 100%;
 }
 
 .mint {
   background: $color1;
-
 }
 .teal {
   background: $color2;
-
 }
 .gold {
   background: $color3;
-
 }
 .tomato {
   background: $color4;
+}
 
+p {
+  width: 100%;
+}
+
+.tint {
+  width: 33.3%;
+  height: 100%;
+  float: left;
+  color: green;
 }

@@ -6,13 +6,13 @@
     <title>Sass Colors</title>
   </head>
   <body>
-    <section class="wrapper">
+    <div class="wrapper">
       <h1>Colors</h1>
-      <h2>Primary Colors</h2>
+      <h3>Primary Colors</h3>
       <div class="row">
         <div class="color-column">
           <div class="color mint"></div>
-            <table>
+            <table class="clear-fix">
               <tr>
                 <td class="left">Name:</td>
                 <td class="right">Mint</td>
@@ -26,7 +26,7 @@
                 <td class="right">152deg/58%/91%</td>
               </tr>
             </table>
-        </div>
+        </div> <!--color-column for mint-->
         <div class="color-column">
           <div class="color teal"></div>
           <table>
@@ -43,7 +43,7 @@
               <td class="right">176deg/59%/51%</td>
             </tr>
           </table>
-        </div>
+        </div> <!--color-column for teal-->
         <div class="color-column">
           <div class="color gold"></div>
           <table>
@@ -60,7 +60,7 @@
               <td class="right">40deg/100%/60%</td>
             </tr>
           </table>
-        </div>
+        </div> <!--color-column for gold-->
         <div class="color-column">
           <div class="color tomato"></div>
           <table>
@@ -77,11 +77,40 @@
               <td class="right">9deg/100%/64%</td>
             </tr>
           </table>
+        </div> <!--color-column for tomato-->
+      </div> <!--row-->
+      <div class="row">
+        <div class="header">
+          <h3>Tints & Tones</h3>
+          <p>These colors are lighter and darker variations of our main brand colors.  These are especially helpful for hover states, illustrations, and other small variations.</p>
         </div>
-
+        <div class="color-column">
+          <div class="color">
+            <div class="column-1"></div>
+            <div class="column-2"></div>
+            <div class="column-3"></div>
+          </div>
+        </div>
+        <div class="color-column">
+          <div class="color">
+            <div class="tint"></div>
+            <div class="tone"></div>
+          </div>
+        </div>
+        <div class="color-column">
+          <div class="color">
+            <div class="tint"></div>
+            <div class="tone"></div>
+          </div>
+        </div>
+        <div class="color-column">
+          <div class="color">
+            <div class="tint"></div>
+            <div class="tone"></div>
+          </div>
+        </div>
       </div>
-
-    </section>
+    </div> <!--wrapper-->
 
   </body>
 </html>

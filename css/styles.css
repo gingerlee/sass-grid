@@ -1,6 +1,17 @@
 body {
   font-family: sans-serif; }
 
+.clear-fix:after {
+  clear: both;
+  display: block;
+  content: ""; }
+
+.row:after {
+  clear: both;
+  display: block;
+  content: "";
+  margin-bottom: 60px; }
+
 table {
   font-size: .7em;
   width: 100%; }
@@ -19,7 +30,7 @@ table {
   margin: .5%; }
 
 .color {
-  float: none;
+  clear: both;
   width: 100%; }
 
 .mint {
@@ -33,5 +44,14 @@ table {
 
 .tomato {
   background: tomato; }
+
+p {
+  width: 100%; }
+
+.tint {
+  width: 33.3%;
+  height: 100%;
+  float: left;
+  color: green; }
 
 /*# sourceMappingURL=styles.css.map */
